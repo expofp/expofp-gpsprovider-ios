@@ -34,8 +34,9 @@ public class GpsProvider : NSObject, LocationProvider, CLLocationManagerDelegate
     public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
         guard let loc: CLLocationCoordinate2D = manager.location?.coordinate
         else { return }
-        
+
         let dloc = ExpoFpCommon.Location(latitude: loc.latitude, longitude: loc.longitude, angle: nil)
+        
         if let dlg = delegate {
             dlg.didUpdateLocation(location: dloc)
         }
