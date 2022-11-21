@@ -14,7 +14,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		Kb2LRRYsjN4Fs7DgAtsXRxPh6do=
+		MJrvk+imfZ+CcOBTUlRLYAUoKqA=
 		</data>
 		<key>Modules/ExpoFpGpsProvider.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -34,7 +34,7 @@
 		</data>
 		<key>Modules/ExpoFpGpsProvider.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		hnXThSomRi+EoqQuBEz5lcXJ0t4=
+		gY9Smq9x3yyZp8B5JDbACN29hB0=
 		</data>
 		<key>Modules/ExpoFpGpsProvider.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
@@ -54,7 +54,7 @@
 		</data>
 		<key>Modules/ExpoFpGpsProvider.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		OxtziW7Lp9xSp1pvKcgkaTp4tH4=
+		4kALJlxEeyLQEfDfrn68kUas3BI=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -109,7 +109,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			elXxj/apAK6L2gS9QaMsWmkPhyFGB6OeuXYW8rYU/W8=
+			0urPejlix3CGRDG2Y/uVadl484hCw40yh+JgIP2JYNI=
 			</data>
 		</dict>
 		<key>Modules/ExpoFpGpsProvider.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
@@ -144,7 +144,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			HwRIjZAfHsySrQSx22/sm87D3GslQvz0tPkg4KT6NnE=
+			wjfPykjA99vCFQoI7MQkF6306G5ili/Si67djU3bIVA=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

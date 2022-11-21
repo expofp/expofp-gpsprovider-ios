@@ -3,9 +3,11 @@ import Foundation
 import CoreLocation
 
 public class GpsProvider : NSObject, LocationProvider, CLLocationManagerDelegate {
-    private let locationManager = CLLocationManager()
+    private var locationManager: CLLocationManager? = nil
     
     private var lDelegate: ExpoFpCommon.LocationProviderDelegate? = nil
+    
+    private var status: CLAuthorizationStatus = .denied
     
     public var delegate: ExpoFpCommon.LocationProviderDelegate? {
         get { lDelegate }
@@ -15,20 +17,20 @@ public class GpsProvider : NSObject, LocationProvider, CLLocationManagerDelegate
     }
     
     public func start() {
-        requestPermissions()
-        
+        self.locationManager = CLLocationManager()
+        self.locationManager?.requestWhenInUseAuthorization()
         if CLLocationManager.locationServicesEnabled() {
-            locationManager.delegate = self
-            locationManager.desiredAccuracy = kCLLocationAccuracyBest
-            locationManager.activityType = .fitness
-            locationManager.distanceFilter = .zero
-            locationManager.startUpdatingLocation()
+            self.locationManager?.delegate = self
+            self.locationManager?.desiredAccuracy = kCLLocationAccuracyBest
+            self.locationManager?.activityType = .fitness
+            self.locationManager?.distanceFilter = .zero
+            self.locationManager?.startUpdatingLocation()
         }
     }
     
     public func stop() {
-        locationManager.delegate = nil
-        locationManager.stopUpdatingLocation()
+        self.locationManager?.delegate = nil
+        self.locationManager?.stopUpdatingLocation()
     }
     
     public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
@@ -43,15 +45,14 @@ public class GpsProvider : NSObject, LocationProvider, CLLocationManagerDelegate
     }
     
     public func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        stop()
-        Thread.sleep(forTimeInterval: 1.0)
-        start()
+        if(status == .authorizedAlways || status == .authorizedWhenInUse || status == .notDetermined){
+            stop()
+            Thread.sleep(forTimeInterval: 1.0)
+            start()
+        }
     }
     
     public func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-    }
-    
-    private func requestPermissions() {
-        locationManager.requestWhenInUseAuthorization()
+        self.status = status
     }
 }
