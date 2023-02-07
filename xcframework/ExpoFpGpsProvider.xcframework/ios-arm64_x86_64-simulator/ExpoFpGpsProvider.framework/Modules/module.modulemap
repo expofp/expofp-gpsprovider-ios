@@ -1,0 +1,11 @@
+framework module ExpoFpGpsProvider {
+  umbrella header "ExpoFpGpsProvider.h"
+
+  export *
+  module * { export * }
+}
+
+module ExpoFpGpsProvider.Swift {
+  header "ExpoFpGpsProvider-Swift.h"
+  requires objc
+}
