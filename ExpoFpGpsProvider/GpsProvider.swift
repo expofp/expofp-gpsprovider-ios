@@ -34,14 +34,11 @@ public class GpsProvider : NSObject, LocationProvider, CLLocationManagerDelegate
     }
     
     public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        print("POINT1: didUpdateLocations")
         
         guard let loc: CLLocationCoordinate2D = manager.location?.coordinate
         else { return }
 
         let dloc = ExpoFpCommon.Location(latitude: loc.latitude, longitude: loc.longitude, angle: nil)
-        print("POINT1.1 dloc:")
-        print(dloc)
         
         if let dlg = delegate {
             dlg.didUpdateLocation(location: dloc)
@@ -49,12 +46,6 @@ public class GpsProvider : NSObject, LocationProvider, CLLocationManagerDelegate
     }
     
     public func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        print("POINT2 didFailWithError status:")
-        print(status)
-        
-        print("POINT2.1 didFailWithError error:")
-        print(error)
-        
         if(status == .authorizedAlways || status == .authorizedWhenInUse || status == .notDetermined){
             stopUpdate(manager)
             Thread.sleep(forTimeInterval: 1.0)
@@ -63,8 +54,6 @@ public class GpsProvider : NSObject, LocationProvider, CLLocationManagerDelegate
     }
     
     public func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        print("POINT3 didChangeAuthorization status:")
-        print(status)
         
         self.status = status
         if(status == .denied || status == .restricted){
@@ -76,8 +65,6 @@ public class GpsProvider : NSObject, LocationProvider, CLLocationManagerDelegate
     }
     
     private func startUpdate(_ manager: CLLocationManager){
-        print("POINT4: startUpdate")
-        
         if(self.started){
             return
         }
@@ -93,8 +80,6 @@ public class GpsProvider : NSObject, LocationProvider, CLLocationManagerDelegate
     }
     
     private func stopUpdate(_ manager: CLLocationManager){
-        print("POINT5: stopUpdate")
-        
         if(!self.started){
             return
         }
