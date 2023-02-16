@@ -1,16 +1,16 @@
 PODS:
-  - ExpoFpCommon (3.0.8)
+  - ExpoFpCommon (3.0.10)
 
 DEPENDENCIES:
-  - ExpoFpCommon (= 3.0.8)
+  - ExpoFpCommon (= 3.0.10)
 
 SPEC REPOS:
   https://github.com/CocoaPods/Specs.git:
     - ExpoFpCommon
 
 SPEC CHECKSUMS:
-  ExpoFpCommon: 14e80290e2657af7497b1e941437ec0d26736c86
+  ExpoFpCommon: cefa33ad816c8525078f7ff838e8901bf85705a7
 
-PODFILE CHECKSUM: 8af5c6dea7125e11b1bf61aa6c30c68445b49620
+PODFILE CHECKSUM: ed44f4d25d572b6d7aec22eb06223732c946e08e
 
 COCOAPODS: 1.11.3

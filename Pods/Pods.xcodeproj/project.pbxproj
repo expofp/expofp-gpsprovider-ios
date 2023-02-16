@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 56;
+	objectVersion = 55;
 	objects = {
 
 /* Begin PBXAggregateTarget section */
@@ -16,6 +16,7 @@
 			dependencies = (
 			);
 			name = ExpoFpCommon;
+			productName = ExpoFpCommon;
 		};
 /* End PBXAggregateTarget section */
 
@@ -39,7 +40,7 @@
 		2EBE528C97EEEECB94E743C899E243BB /* Pods-ExpoFpGpsProvider-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-ExpoFpGpsProvider-acknowledgements.markdown"; sourceTree = "<group>"; };
 		2F70DE63FC177A6C698901ECFD64AB0E /* ExpoFpCommon-xcframeworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "ExpoFpCommon-xcframeworks.sh"; sourceTree = "<group>"; };
 		36CDE405A17E1ECD162F4755ED537BFA /* Pods-ExpoFpGpsProvider.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-ExpoFpGpsProvider.modulemap"; sourceTree = "<group>"; };
-		4AD8DE5E7D5515944B03E89900538B42 /* ExpoFpCommon.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; name = ExpoFpCommon.xcframework; path = xcframework/ExpoFpCommon.xcframework; sourceTree = "<group>"; };
+		4AD8DE5E7D5515944B03E89900538B42 /* ExpoFpCommon.xcframework */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = wrapper.xcframework; name = ExpoFpCommon.xcframework; path = xcframework/ExpoFpCommon.xcframework; sourceTree = "<group>"; };
 		4BFD019F12EE8B30BCC7C0B3F26B3443 /* Pods-ExpoFpGpsProvider-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-ExpoFpGpsProvider-umbrella.h"; sourceTree = "<group>"; };
 		4C34ED12735C469BFAA965F2416F67EF /* Pods-ExpoFpGpsProvider-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ExpoFpGpsProvider-acknowledgements.plist"; sourceTree = "<group>"; };
 		5D332367458B4211B99BF34F9B3053F6 /* Pods-ExpoFpGpsProvider.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExpoFpGpsProvider.release.xcconfig"; sourceTree = "<group>"; };
@@ -47,7 +48,7 @@
 		72A4F0D98E88BFE47CC688067D9A2A5E /* Pods-ExpoFpGpsProvider-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-ExpoFpGpsProvider-Info.plist"; sourceTree = "<group>"; };
 		73010CC983E3809BECEE5348DA1BB8C6 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		8C71BF82FA5BE7DAABF45E960C36886E /* ExpoFpCommon.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ExpoFpCommon.release.xcconfig; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		E6C9966453C1363D1CF7FB4F1BB5BCC1 /* ExpoFpCommon.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = ExpoFpCommon.debug.xcconfig; sourceTree = "<group>"; };
 		F7778FFC1C0405BE0BF378522CF3454B /* Pods-ExpoFpGpsProvider.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-ExpoFpGpsProvider.debug.xcconfig"; sourceTree = "<group>"; };
 		FE41C659359CAA83D6487FA80BFEB1D3 /* Pods-ExpoFpGpsProvider-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-ExpoFpGpsProvider-dummy.m"; sourceTree = "<group>"; };
@@ -149,7 +150,6 @@
 				BF0929EE5F36DC925D60D1B8FA0612CF /* Frameworks */,
 				9E01D8CA8E6D683D78FC57428247013D /* Support Files */,
 			);
-			name = ExpoFpCommon;
 			path = ExpoFpCommon;
 			sourceTree = "<group>";
 		};
@@ -204,7 +204,7 @@
 				LastUpgradeCheck = 1300;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 14.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -334,6 +334,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
@@ -439,6 +440,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				BUILD_LIBRARY_FOR_DISTRIBUTION = YES;
 				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
