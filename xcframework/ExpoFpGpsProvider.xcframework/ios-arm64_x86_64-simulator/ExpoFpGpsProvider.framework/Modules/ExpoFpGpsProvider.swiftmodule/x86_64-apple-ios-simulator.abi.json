@@ -138,17 +138,23 @@
           {
             "kind": "Function",
             "name": "start",
-            "printedName": "start()",
+            "printedName": "start(_:)",
             "children": [
               {
                 "kind": "TypeNominal",
                 "name": "Void",
                 "printedName": "()"
+              },
+              {
+                "kind": "TypeNominal",
+                "name": "Bool",
+                "printedName": "Swift.Bool",
+                "usr": "s:Sb"
               }
             ],
             "declKind": "Func",
-            "usr": "s:17ExpoFpGpsProvider0cD0C5startyyF",
-            "mangledName": "$s17ExpoFpGpsProvider0cD0C5startyyF",
+            "usr": "s:17ExpoFpGpsProvider0cD0C5startyySbF",
+            "mangledName": "$s17ExpoFpGpsProvider0cD0C5startyySbF",
             "moduleName": "ExpoFpGpsProvider",
             "declAttributes": [
               "AccessControl"
@@ -245,40 +251,6 @@
             "mangledName": "$s17ExpoFpGpsProvider0cD0C15locationManager_16didFailWithErrorySo010CLLocationF0C_s0J0_ptF",
             "moduleName": "ExpoFpGpsProvider",
             "objc_name": "locationManager:didFailWithError:",
-            "declAttributes": [
-              "ObjC",
-              "AccessControl"
-            ],
-            "funcSelfKind": "NonMutating"
-          },
-          {
-            "kind": "Function",
-            "name": "locationManager",
-            "printedName": "locationManager(_:didChangeAuthorization:)",
-            "children": [
-              {
-                "kind": "TypeNominal",
-                "name": "Void",
-                "printedName": "()"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CLLocationManager",
-                "printedName": "CoreLocation.CLLocationManager",
-                "usr": "c:objc(cs)CLLocationManager"
-              },
-              {
-                "kind": "TypeNominal",
-                "name": "CLAuthorizationStatus",
-                "printedName": "CoreLocation.CLAuthorizationStatus",
-                "usr": "c:@E@CLAuthorizationStatus"
-              }
-            ],
-            "declKind": "Func",
-            "usr": "c:@M@ExpoFpGpsProvider@objc(cs)GpsProvider(im)locationManager:didChangeAuthorizationStatus:",
-            "mangledName": "$s17ExpoFpGpsProvider0cD0C15locationManager_22didChangeAuthorizationySo010CLLocationF0C_So21CLAuthorizationStatusVtF",
-            "moduleName": "ExpoFpGpsProvider",
-            "objc_name": "locationManager:didChangeAuthorizationStatus:",
             "declAttributes": [
               "ObjC",
               "AccessControl"
@@ -391,7 +363,7 @@
     {
       "filePath": "\/Users\/vladimir\/Xcode projects\/expofp-gpsprovider-ios\/ExpoFpGpsProvider\/GpsProvider.swift",
       "kind": "BooleanLiteral",
-      "offset": 369,
+      "offset": 323,
       "length": 5,
       "value": "false"
     }

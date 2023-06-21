@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/ExpoFpGpsProvider-Swift.h</key>
 		<data>
-		JdwO5BnQ1tLTvbmmEsUC68VvAJc=
+		TgkOfqEZ3YzTRQuoKlR77seT9R8=
 		</data>
 		<key>Headers/ExpoFpGpsProvider.h</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Modules/ExpoFpGpsProvider.swiftmodule/arm64-apple-ios-simulator.abi.json</key>
 		<data>
-		ZArWzL4YsJFilhwBeYnCyN/KHJ4=
+		GvWdg8lWe2G7TlCdNSaZrw08Duc=
 		</data>
 		<key>Modules/ExpoFpGpsProvider.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		F0qC+aKirhIoRv3FDPHLhgvFD+U=
+		t6wMlbXkM24BzK3WHK6cuhOXiV0=
 		</data>
 		<key>Modules/ExpoFpGpsProvider.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -30,19 +30,19 @@
 		</data>
 		<key>Modules/ExpoFpGpsProvider.swiftmodule/arm64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		F0qC+aKirhIoRv3FDPHLhgvFD+U=
+		t6wMlbXkM24BzK3WHK6cuhOXiV0=
 		</data>
 		<key>Modules/ExpoFpGpsProvider.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		tWcrWbcuMkSwAT0wCpMNTWvm6iY=
+		oIYdKPpNcoMtAatqDXPH9onXnlU=
 		</data>
 		<key>Modules/ExpoFpGpsProvider.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<data>
-		ZArWzL4YsJFilhwBeYnCyN/KHJ4=
+		GvWdg8lWe2G7TlCdNSaZrw08Duc=
 		</data>
 		<key>Modules/ExpoFpGpsProvider.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<data>
-		3NxJe0VbDEHf3ikdq2VCkeS6WyM=
+		7vYzAkSxPQFu5yMXxPI5ILzTiD4=
 		</data>
 		<key>Modules/ExpoFpGpsProvider.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
 		<data>
@@ -50,11 +50,11 @@
 		</data>
 		<key>Modules/ExpoFpGpsProvider.swiftmodule/x86_64-apple-ios-simulator.swiftinterface</key>
 		<data>
-		3NxJe0VbDEHf3ikdq2VCkeS6WyM=
+		7vYzAkSxPQFu5yMXxPI5ILzTiD4=
 		</data>
 		<key>Modules/ExpoFpGpsProvider.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<data>
-		kespUuU56g2/32qobwI/t/okAyk=
+		Pm53b+mtFqYLFSfNU6pk4OHa7pU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -67,7 +67,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			LswKyPMn3xqEVpFpH22WYS+Wx0k5kMo8VytSwcNoeGU=
+			S2KeF1Bpsw0IH9KBBFshdTPMoE5U7H+thfE87l4pqO8=
 			</data>
 		</dict>
 		<key>Headers/ExpoFpGpsProvider.h</key>
@@ -81,14 +81,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ky7iqMgwntdRs0o07/FN6I6cTzWQIkbQc6THOHHRwwQ=
+			hf/Lz9NtTk33K01muznhJfBfmDedZ0hCpd9VhzMyhzM=
 			</data>
 		</dict>
 		<key>Modules/ExpoFpGpsProvider.swiftmodule/arm64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			av8EE/G3NCJBpvyI43U1PuhFt+RDzZp+7qn6ZrBHWPY=
+			UyrwqFWfpxqlfFGm9GhenLR6+06r5DEgXJygUQGRBjY=
 			</data>
 		</dict>
 		<key>Modules/ExpoFpGpsProvider.swiftmodule/arm64-apple-ios-simulator.swiftdoc</key>
@@ -102,28 +102,28 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			av8EE/G3NCJBpvyI43U1PuhFt+RDzZp+7qn6ZrBHWPY=
+			UyrwqFWfpxqlfFGm9GhenLR6+06r5DEgXJygUQGRBjY=
 			</data>
 		</dict>
 		<key>Modules/ExpoFpGpsProvider.swiftmodule/arm64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			OYJbINl7rzCfSjM9cVLFsrJ0nM0SyI4sNp+BzxWaBJM=
+			a2BqL1YX3OD3VFBTOprTsvI/53B4wdzetJdzjgFcvrE=
 			</data>
 		</dict>
 		<key>Modules/ExpoFpGpsProvider.swiftmodule/x86_64-apple-ios-simulator.abi.json</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			Ky7iqMgwntdRs0o07/FN6I6cTzWQIkbQc6THOHHRwwQ=
+			hf/Lz9NtTk33K01muznhJfBfmDedZ0hCpd9VhzMyhzM=
 			</data>
 		</dict>
 		<key>Modules/ExpoFpGpsProvider.swiftmodule/x86_64-apple-ios-simulator.private.swiftinterface</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			4QhlmizyLjCn3crpcZrHb+ICaB8tTgyEYEHAjbZk5YU=
+			v0e2HXh7uWRLqyti6GygWXqaoTRqUH2YqVdVb+notdM=
 			</data>
 		</dict>
 		<key>Modules/ExpoFpGpsProvider.swiftmodule/x86_64-apple-ios-simulator.swiftdoc</key>
@@ -137,14 +137,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			4QhlmizyLjCn3crpcZrHb+ICaB8tTgyEYEHAjbZk5YU=
+			v0e2HXh7uWRLqyti6GygWXqaoTRqUH2YqVdVb+notdM=
 			</data>
 		</dict>
 		<key>Modules/ExpoFpGpsProvider.swiftmodule/x86_64-apple-ios-simulator.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			eqKadfPzlZeWgoDVIzB0pMSQRqZz51VaoBBoLMv4XLI=
+			8D/TNijV9MDrFNlMGsA3+ovdPHM5c3LDQwprYmcCirE=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

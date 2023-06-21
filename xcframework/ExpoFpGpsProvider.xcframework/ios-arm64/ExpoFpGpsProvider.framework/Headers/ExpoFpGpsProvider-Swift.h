@@ -260,7 +260,6 @@ SWIFT_CLASS("_TtC17ExpoFpGpsProvider11GpsProvider")
 @interface GpsProvider : NSObject <CLLocationManagerDelegate>
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didUpdateLocations:(NSArray<CLLocation *> * _Nonnull)locations;
 - (void)locationManager:(CLLocationManager * _Nonnull)manager didFailWithError:(NSError * _Nonnull)error;
-- (void)locationManager:(CLLocationManager * _Nonnull)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status;
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

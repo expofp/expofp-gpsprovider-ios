@@ -3,11 +3,9 @@ import Foundation
 import CoreLocation
 
 public class GpsProvider : NSObject, LocationProvider, CLLocationManagerDelegate {
-    private var locationManager: CLLocationManager? = nil
+    private var locationManager: CLLocationManager = CLLocationManager()
     
     private var lDelegate: ExpoFpCommon.LocationProviderDelegate? = nil
-    
-    private var status: CLAuthorizationStatus = .denied
     
     private var started = false
     
@@ -15,26 +13,30 @@ public class GpsProvider : NSObject, LocationProvider, CLLocationManagerDelegate
         get { lDelegate }
         set(newDelegate) {
             lDelegate = newDelegate
+            startUpdate(locationManager)
         }
     }
     
-    public func start() {
-        let manager = CLLocationManager()
-        manager.delegate = self
-        manager.requestWhenInUseAuthorization()
+    public func start(_ inBackground:Bool) {
+        if(self.started){
+            return
+        }
         
-        self.locationManager = manager
-       
+        self.started = true
+        startUpdate(locationManager)
     }
     
     public func stop() {
-        if let manager = self.locationManager {
-            stopUpdate(manager)
+        
+        if(!self.started){
+            return
         }
+
+        self.started = false
+        stopUpdate(locationManager)
     }
     
     public func locationManager(_ manager: CLLocationManager, didUpdateLocations locations: [CLLocation]) {
-        
         guard let loc: CLLocationCoordinate2D = manager.location?.coordinate
         else { return }
 
@@ -46,30 +48,20 @@ public class GpsProvider : NSObject, LocationProvider, CLLocationManagerDelegate
     }
     
     public func locationManager(_ manager: CLLocationManager, didFailWithError error: Error) {
-        if(status == .authorizedAlways || status == .authorizedWhenInUse || status == .notDetermined){
+        if(manager.authorizationStatus == .notDetermined){
             stopUpdate(manager)
             Thread.sleep(forTimeInterval: 1.0)
             startUpdate(manager)
         }
     }
     
-    public func locationManager(_ manager: CLLocationManager, didChangeAuthorization status: CLAuthorizationStatus) {
-        
-        self.status = status
-        if(status == .denied || status == .restricted){
-            stopUpdate(manager)
-        }
-        else if(status == .authorizedAlways || status == .authorizedWhenInUse){
-            startUpdate(manager)
-        }
-    }
-    
     private func startUpdate(_ manager: CLLocationManager){
-        if(self.started){
+        if(!started || delegate == nil){
             return
         }
         
-        self.started = true
+        manager.delegate = self
+        manager.requestWhenInUseAuthorization()
         
         if CLLocationManager.locationServicesEnabled() {
             manager.desiredAccuracy = kCLLocationAccuracyBest
@@ -80,12 +72,6 @@ public class GpsProvider : NSObject, LocationProvider, CLLocationManagerDelegate
     }
     
     private func stopUpdate(_ manager: CLLocationManager){
-        if(!self.started){
-            return
-        }
-        
-        self.started = false
-        
         manager.delegate = nil
         manager.stopUpdatingLocation()
     }
