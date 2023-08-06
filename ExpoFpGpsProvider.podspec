@@ -1,6 +1,6 @@
 Pod::Spec.new do |spec|
   spec.name               = "ExpoFpGpsProvider"
-  spec.version            = "4.2.3"
+  spec.version            = "4.2.4"
   spec.platform           = :ios, '14.0'
   spec.summary            = "ExpoFP GPS location provider"
   spec.description        = "GPS location provider for ExpoFP SDK"
@@ -18,6 +18,6 @@ Pod::Spec.new do |spec|
   spec.ios.vendored_frameworks = "xcframework/ExpoFpGpsProvider.xcframework"
 
   # Add here any resources to be exported.
-  spec.dependency 'ExpoFpCommon', '4.2.3'
+  spec.dependency 'ExpoFpCommon', '4.2.4'
 
 end
